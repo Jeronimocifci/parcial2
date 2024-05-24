@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col mx-5 mt-3">
+    <table class="table border-top border-bottom">
+      <thead class="bottom-shadow">
+        <tr>
+          <th scope="col" class="shadowed-text-light">#</th>
+          <th scope="col" class="shadowed-text-light">nombre</th>
+          <th scope="col" class="shadowed-text-light">idiomaOficial</th>
+          <th scope="col" class="shadowed-text-light">capital</th>
+          <th scope="col" class="shadowed-text-light">anioFormacion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pais of paises" class="table-active">
+          <th scope="row">{{pais.id}}</th>
+          <td class="text-primary">{{pais.nombre}}</td>
+          <td>{{pais.idiomaOficial}}</td>
+          <td>{{pais.capital}}</td>
+          <td>{{pais.anioFormacion}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="row">
+      <p>El país más antiguo es {{paisMasAntiguo}} y fue conformado en {{anioFormacionMasAntiguo}}</p>
+    </div>
+  </div>
+  <div class="col">
+  </div>
+</div>
+

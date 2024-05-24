@@ -1,0 +1,10 @@
+<div *ngIf="pais">
+    <h2>{{ pais.nombre }} Details</h2>
+    <div><span>Id: </span>{{ pais.id }}</div>
+    <div><span>Nombre: </span>{{ pais.nombre }}</div>
+    <div><span>Año de Formación: </span>{{ pais.anioFormacion }}</div>
+    <div><span>Idioma Oficial: </span>{{ pais.idiomaOficial }}</div>
+    <div><span>Capital: </span>{{ pais.capital }}</div>
+    <div><span>Descripción: </span>{{ pais.descripcion }}</div>
+    <img [src]="pais.bandera" alt="Bandera de {{ pais.nombre }}">
+  </div>
